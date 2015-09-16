@@ -139,8 +139,11 @@
   .header-nav{
     color: #b9b9b9;
   }
-@media (max-width: 768px) {
-  .name{
-    /*color: red;*/
+  .featured-image{
+        background-image: url("../assets/steak.JPG");
+        height: 85%;
+        background-size: cover;
+        background-position: center;
   }
+
 }
