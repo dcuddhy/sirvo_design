@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  body .banner {
+    height: 962px;
+  }
+  .banner .header-overlay{
+    margin-bottom: -35em;
+  }
+  .profile-primary-element .profile-photo-container{
+    display: block;
+    margin: 40px auto;
+  }
+  .profile-primary-element .primary-info{
+    display: block;
+    padding: 0 0 40px 0;
+    position: relative;
+    text-align: center;
+  }
+  .sirvo-badge{
+    margin: 0;
+    position: relative;
+    left: 10px;
+  }
+}
