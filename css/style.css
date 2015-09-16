@@ -1,0 +1,133 @@
+/*background-grey: #f4f4f4*/
+/*darker-div: #e9e9e9*/
+/*text-dark-grey: #424242*/
+/*sirvo-orange: #ff5a00;*/
+/*secondary-text-grey: #b9b9b9;*/
+
+  html, body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 26px;
+  }
+
+  body{
+    font-family: 'mulilight', Arial, sans-serif;
+    color: #424242;
+    background: #f4f4f4;
+  }
+
+  .grey-element{
+    background: #e9e9e9;
+  }
+
+  .section-row{
+    padding: 56px 0;
+  }
+
+  .section-row:last-of-type{
+    padding: 56px 0 96px 0;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  .section-phrase{
+    font-family: 'mulisemibold', Arial, sans-serif;
+    font-size: 36px;
+  }
+  h1, h2, h3, h4{
+    font-family: 'mulisemibold', Arial, sans-serif;
+  }
+  b{
+    font-family: 'mulisemibold', Arial, sans-serif;
+  }
+
+  .bottom-column-padding{
+    padding-bottom: 96px;
+  }
+
+  /*.banner{
+    background: #424242;
+    height: 70%;
+    overflow: hidden;
+  }*/
+
+  /*this is great, but it does not stay centered*/
+  /*.banner img{
+    min-height: 100%;
+    min-width: 100%;
+    opacity: .2;
+  }*/
+
+.banner {
+  background-image: url("../assets/banner.jpg");
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+}
+.header-overlay{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #424242;
+  opacity: .8;
+  margin-bottom: -26em;
+
+}
+
+  .profile-photo{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: 3px solid white;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.5);
+  }
+  .profile-primary-element{
+    display: block;
+  }
+  .primary-info{
+    display: inline-block;
+    position: absolute;
+    padding-top: 40px;
+  }
+  .profile-photo-container{
+    display: inline-block;
+    width: 300px;
+    margin: 30px;
+  }
+  .current-city,
+  .activity-level,
+  .position{
+    color: #ff5a00;
+  }
+  .position{
+    display: inline;
+  }
+  .name{
+    color: #ffffff;
+    font-size: 48px;
+  }
+  .tagline{
+    font-family: 'mulilightitalic', Arial, sans-serif;
+    color: #b9b9b9;
+  }
+  .badge-item{
+    color: #b9b9b9;
+    display: inline-block;
+    padding: 0 20px 10px 10px;
+  }
+  .badge-item p{
+    font-size: 16px;
+  }
+  .badge-item:first-of-type{
+    border-right: 2px solid #b9b9b9;
+    background: pink !important;
+  }
+  .logo{
+    width: 150px;
+    height: auto;
+  }
