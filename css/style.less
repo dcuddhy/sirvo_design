@@ -1,5 +1,7 @@
 @import '_reset.css';
 @import '_768px.css';
+@import '_992px.css';
+
 
 
 /*background-grey: #f4f4f4*/
@@ -21,12 +23,22 @@
     background: #f4f4f4;
   }
 
+  a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid;
+  }
+
   .grey-element{
     background: #e9e9e9;
   }
 
   .section-row{
     padding: 56px 0;
+    line-height: 1.5;
+  }
+
+  .section-row a{
+    color: #424242;
   }
 
   .section-row:last-of-type{
@@ -41,9 +53,7 @@
     font-family: 'mulisemibold', Arial, sans-serif;
     font-size: 36px;
   }
-  h1, h2, h3, h4{
-    font-family: 'mulisemibold', Arial, sans-serif;
-  }
+
   b{
     font-family: 'mulisemibold', Arial, sans-serif;
   }
@@ -93,22 +103,38 @@
   .profile-primary-element{
     display: block;
     padding-right: 20px;
+    line-height: 1.5;
   }
   .primary-info{
     display: inline-block;
     position: absolute;
     padding-top: 40px;
+    color: #b9b9b9;
   }
   .profile-photo-container{
     display: inline-block;
     width: 300px;
     margin: 30px;
+    @media (min-width: 800px) {
+      border: 10px solid blue !important;
+    }
+
   }
   .current-city,
+  .current-city a,
   .activity-level,
+  .activity-level a,
+  .position a,
   .position{
     color: #ff5a00;
   }
+
+  .current-city:before{
+    font-family: FontAwesome;
+    content: "\f041";
+    padding-right: 10px;
+  }
+
   .position{
     display: inline;
   }
@@ -119,31 +145,57 @@
   .tagline{
     font-family: 'mulilightitalic', Arial, sans-serif;
     color: #b9b9b9;
+    display: block;
   }
-  .badge-item{
+  .badge-item {
+    line-height: 1;
+    margin-top: -15px;
+    margin: -15px 15px 10px 15px;
     color: #b9b9b9;
     display: inline-block;
-    padding: 0 20px 10px 10px;
+    padding: 0;
+  }
+  .badge-divider{
+    display: inline-block;
+    height: 60px;
+    border:1px solid #b9b9b9;
+    vertical-align: -80%;
+    margin-top: -30px;
+  }
+  .sirvo-badge a:hover{
+    color: #b9b9b9;
   }
   .badge-item p{
     font-size: 16px;
-  }
-  .badge-item:first-of-type{
-    border-right: 2px solid #b9b9b9;
-    background: pink !important;
   }
   .logo{
     width: 150px;
     height: auto;
   }
-  .header-nav{
-    color: #b9b9b9;
+  .header-nav, .header-nav a{
+    color: #ffffff;
+    margin-top: -2em;
+  }
+  .body-nav{
+    display: block;
+    height: 76px;
+    line-height: 3;
+    background: #e9e9e9;
+  }
+  .body-nav a{
+    color: #424242;
   }
   .featured-image{
-        background-image: url("../assets/steak.JPG");
-        height: 85%;
-        background-size: cover;
-        background-position: center;
+    background-image: url("../assets/steak.JPG");
+    height: 85%;
+    background-size: cover;
+    background-position: center;
   }
-
+  .social-button-container{
+    padding-top: 10px;
+  }
+  .social-button{
+    height: 30px;
+    padding: 0 3px;
+  }
 }

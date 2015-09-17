@@ -19,11 +19,15 @@
 
       <!-- Optional theme -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-      <link rel="stylesheet" href="css/style.css">
-
       <!-- Latest compiled and minified JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+      <!-- <link rel="stylesheet/less" href="css/style.less">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script> -->
+      <link rel="stylesheet" href="css/style.less" type="text/css">
+      <script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
+
 
   </head>
 
@@ -35,36 +39,51 @@
         <div class="text-center sirvo-badge col-lg-offset-8 col-lg-3 col-sm-offset-7 col-sm-5 ">
           <img src="assets/logo.png" class="logo"><br>
           <div class="activity-level">VERY ACTIVE</div> <br>
-          <div class="badge-item">
-            2,536 <br>
-            <p>Followers</p>
-          </div>
-          <div class="badge-item">
-            392 <br>
-            <p>Following</p>
-          </div>
+          <a href="#">
+            <div class="badge-item">
+                2,536 <br>
+                <p>Followers</p>
+            </div>
+          </a>
+          <span class="badge-divider"></span>
+          <a href="#">
+            <div class="badge-item">
+              392 <br>
+                <p>Following</p>
+            </div>
+          </a>
         </div>
         <div class="profile-primary-element col-lg-offset-1 col-lg-8 col-md-offset-0 col-md-12">
           <div class="profile-photo-container col-lg-4">
             <img src="assets/headshot.jpg" class="profile-photo">
           </div>
           <div class= "primary-info col-lg-10 col-md-10">
-            <div class="current-city">Austin, TX</div>
+            <div class="current-city"><a href="#">Austin, TX</a></div>
             <div class="name">Mike Henderson</div>
-            <div class="position">Sous Chef </div> |
-            <div class="position">Fabi + Rosi</div>
+            <div class="position"><a href="#">Sous Chef</a></div> |
+            <div class="position"><a href="#">Fabi + Rosi</a></div>
             <div class="row">
-            <div class="tagline col-lg-8 col-md-9">My tagline is something personal
-            about myself. Tagline, tag and line.
-            If taglines are 140 characters, it
-            would be okay to take up 4 lines.</div>
-
+              <div class="tagline col-lg-8 col-md-9">
+                My tagline is something personal about myself. Tagline, tag and
+                line. If taglines are 140 characters, it would be okay to take
+                up 4 lines.
+              </div>
+            </div>
+            <div class="row social-button-container col-lg-6">
+              <img src="assets/badges/facebook.png" class="social-button">
+              <img src="assets/badges/twitter.png" class="social-button">
+              <img src="assets/badges/g-plus.png" class="social-button">
+              <img src="assets/badges/instagram.png" class="social-button">
             </div>
           </div>
         </div>
+        <br>
+    </div>
         <div class="text-center header-nav col-lg-offset-7 col-lg-4 col-sm-offset-7 col-sm-5">
-          Invite to Job | Message
+          <a href="#">Invite to Job</a>  |  <a href="#">Message</a>
         </div>
+    <div class= "body-nav text-center col-lg-12">
+      <a href="#">Overview</a>  |  <a href="#">Active</a>  |  <a href="#">Photos</a>
     </div>
 
     <div class="row">
@@ -74,12 +93,14 @@
       <div class=" section-row text-center">
         <div class= "section-phrase">See Mike’s experience.</div><br>
 
-        <b>Senior Chef | Uchi</b>
+        <b><a href="#">Senior Chef</a> | <a href="#">Uchi</a></b><br>
+        <b>2013-2014</b>
         <p>One experience listing, with some details. Mike will probably have more to say than this.
         He’s accomplished a lot in this position afterall. A second experience will go here.
         It will be wildly exciting and compelling.</p><br>
 
-        <b>Demi Chef | Parkside</b>
+        <b><a href="#">Demi Chef</a> | <a href="#">Parkside</a></b><br>
+        <b>2013</b>
         <p>One experience listing, with some details. Mike will probably have more to say than this.
         He’s accomplished a lot in this position afterall. A second experience will go here.
         It will be wildly exciting and compelling.</p>
@@ -127,7 +148,7 @@
           <div class= "section-phrase">Mike has a formal education and wins accolades
           from all the right people.</div><br>
 
-          <b>Culinary Institute of America</b><br>
+          <b><a href="#">Culinary Institute of America</a></b><br>
           After earning his associate’s degree
           at the top of his class, Mike went
           on to get a bachelor’s degree
@@ -148,11 +169,11 @@
     <div class="container">
       <div class="section-row text-center">
         <div class= "section-phrase">People love Mike!</div><br>
-        <b>Tom Colichio | Gramecy Tavern</b>
+        <b><a href="#">Tom Colichio</a> | <a href="#">Gramecy Tavern</a></b>
         <p>“Mike is a reliable and hard working team member with an excellent pallete. He has
         a very bright future.”</p><br>
 
-        <b>Curtis Stone | Maude</b>
+        <b><a href="#">Curtis Stone</a> | <a href="#">Maude</a></b>
         <p>“Nobody handles snappers in the kitchen like Mike Henderson. He brings a finesse
         to the kitchen that would bring Michelangelo to tears.”</p>
       </div>
