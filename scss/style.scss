@@ -1,5 +1,4 @@
 @import '_reset.css';
-@import '_768px.css';
 
 
 // Color Palette
@@ -40,6 +39,9 @@ a:hover{
   height: 737px;
   background-size: cover;
   background-position: center;
+  @media (max-width: 768px) {
+    height: 1102px;
+  }
 }
 
 .header-overlay{
@@ -49,6 +51,9 @@ a:hover{
   background: $text-primary;
   opacity: .8;
   margin-bottom: -26em;
+  @media (max-width: 768px) {
+    margin-bottom: -41em;
+  }
 }
 
 
@@ -56,6 +61,11 @@ a:hover{
 .badge-logo{
   width: 150px;
   height: auto;
+  @media (max-width: 768px) {
+    margin: 0;
+    position: relative;
+    left: 10px;
+  }
 }
 
 .badge-item {
@@ -101,6 +111,10 @@ a:hover{
   display: inline-block;
   width: 300px;
   margin: 30px;
+  @media (max-width: 768px) {
+    display: block;
+    margin: 40px auto;
+  }
 }
 
 .profile-photo{
@@ -118,6 +132,13 @@ a:hover{
   position: absolute;
   padding-top: 40px;
   color: $text-secondary;
+  @media (max-width: 768px) {
+    display: block;
+    padding: 0 0 40px 0;
+    position: relative;
+    text-align: center;
+  }
+
 }
 
 .current-city,
@@ -155,6 +176,10 @@ a:hover{
 // Social Media Buttons Styles
 .social-button-container{
   padding-top: 10px;
+  @media (max-width: 768px) {
+    padding: 0;
+    margin-top: 10px;
+  }
 }
 
 .social-button{
@@ -172,6 +197,10 @@ a:hover{
   color: #ffffff;
   margin-top: -2em;
   text-decoration: none;
+  @media (max-width: 768px) {
+    margin-top: -3em;
+    padding-bottom: 1em
+  }
 }
 
 .body-nav{

@@ -1,31 +1,31 @@
-@media (max-width: 768px) {
-  body .banner {
+/*@media (max-width: 768px) {*/
+  /*body .banner {
     height: 1102px;
   }
   .banner .header-overlay{
     margin-bottom: -41em;
-  }
-  .profile-primary-element .profile-photo-container{
+  }*/
+  /*.profile-primary-element .profile-photo-container{
     display: block;
     margin: 40px auto;
-  }
-  .profile-primary-element .primary-info{
+  }*/
+  /*.profile-primary-element .primary-info{
     display: block;
     padding: 0 0 40px 0;
     position: relative;
     text-align: center;
-  }
-  .sirvo-badge{
+  }*/
+  /*.sirvo-badge{
     margin: 0;
     position: relative;
     left: 10px;
-  }
-  .primary-info .social-button-container{
+  }*/
+  /*.primary-info .social-button-container{
     padding: 0;
     margin-top: 10px;
-  }
-  .banner + .header-nav, .banner+ .header-nav a{
+  }*/
+  /*.banner + .header-nav, .banner+ .header-nav a{
     margin-top: -3em;
     padding-bottom: 1em
   }
-}
+}*/
