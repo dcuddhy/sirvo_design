@@ -3,32 +3,28 @@
 <html lang="en">
 
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sirvo HTML/CSS/DESIGN Sample">
+    <meta name="author" content="Drew Cuddhy">
 
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="">
-       <!-- Favicon -->
-      <link rel="icon" href="favicon.png">
+    <link rel="icon" href="favicon.png">
+    <title>Sirvo Demo</title>
 
-      <title>Sirvo Demo</title>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
 
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
-      <!-- <link rel="stylesheet/less" href="css/style.less">
-      <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script> -->
-      <link rel="stylesheet" href="css/style.less" type="text/css">
-      <script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
+    <!-- LESS.js -->
+    <script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
 
-
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/style.less" type="text/css">
   </head>
 
   <body>
@@ -79,14 +75,12 @@
         </div>
         <br>
     </div>
-        <div class="text-center header-nav col-lg-offset-7 col-lg-4 col-sm-offset-7 col-sm-5">
-          <a href="#">Invite to Job</a>  |  <a href="#">Message</a>
-        </div>
-    <div class= "body-nav text-center col-lg-12">
-      <a href="#">Overview</a>  |  <a href="#">Active</a>  |  <a href="#">Photos</a>
+    <div class="text-center header-nav col-lg-offset-7 col-lg-4 col-sm-offset-7 col-sm-5">
+      <a href="#">Invite to Job</a>  |  <a href="#">Message</a>
     </div>
 
-    <div class="row">
+    <div class= "body-nav text-center col-lg-12">
+      <a href="#">Overview</a>  |  <a href="#">Active</a>  |  <a href="#">Photos</a>
     </div>
 
     <div class="container">
@@ -109,7 +103,6 @@
     <br>
 
     <div class="featured-image row">
-      <!-- <img src="assets/steak.JPG" class="featured-image col-lg-12"> -->
     </div>
 
     <!-- !!! consider making this so you only have one div later -->
@@ -117,25 +110,31 @@
       <div class="section-row text-center">
         <div class= "section-phrase">Mike has valuable skills and offers unique services.</div><br>
           <div class="bottom-column-padding col-lg-4">
-            <b>Services</b><br>
-            Expert expiditing<br>
-            Management<br>
-            Sommelier<br>
+            <b>Services</b>
+            <ul>
+              <li>Expert expiditing</li>
+              <li>Management</li>
+              <li>Sommelier</li>
+            </ul>
           </div>
           <div class="bottom-column-padding col-lg-4">
-            <b>Skills</b><br>
-            Wine pairing<br>
-            Butchery<br>
-            Knife Sharpening<br>
-            Management<br>
-            Multi-tasking<br>
+            <b>Skills</b>
+            <ul>
+              <li>Wine pairing</li>
+              <li>Butchery</li>
+              <li>Knife Sharpening</li>
+              <li>Management</li>
+              <li>Multi-tasking</li>
+            </ul>
           </div>
           <!-- figure out why ul/li gets misaligned -->
           <div class="bottom-column-padding col-lg-4">
-            <b>Languages</b><br>
-            English (native)<br>
-            Spanish (fluent)<br>
-            French (novice)<br>
+            <b>Languages</b>
+            <ul>
+              <li>English (native)</li>
+              <li>Spanish (fluent)</li>
+              <li>French (novice)</li>
+            </ul>
           </div>
       </div>
     </div>
@@ -156,10 +155,12 @@
           <br><br>
 
           <!-- nesting the li's in a ul breaks center alignment for some reason -->
-          <b>Achievements</b><br>
-          James Beard Award 2012<br>
-          Best New Chef in Austin 2011<br>
-          Cum Laude 2010<br>
+          <b>Achievements</b>
+          <ul>
+            <li>James Beard Award 2012</li>
+            <li>Best New Chef in Austin 2011</li>
+            <li>Cum Laude 2010</li>
+          </ul>
         </div>
       </div>
     </div>
