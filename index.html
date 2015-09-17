@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,48 +15,45 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <!-- FONT AWESOME -->
+    <!-- FONTS & FONT AWESOME -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
-
-    <!-- LESS.js -->
-    <script src="http://lesscss.googlecode.com/files/less-1.0.21.min.js"></script>
 
     <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
 
-  <body>
+  <body class="overview">
     <div class="banner row">
       <div class="header-overlay">
       </div>
-      <!-- <img src="assets/banner.jpg" class="col-lg-12"> -->
       <div class="text-center sirvo-badge col-lg-offset-8 col-lg-3 col-sm-offset-7 col-sm-5 ">
         <img src="assets/logo.png" class="badge-logo"><br>
-        <div class="activity-level">VERY ACTIVE</div> <br>
-          <div class="badge-item">
-            <a href="#">
-              2,536 <br>
-            </a>
-            <p>Followers</p>
-          </div>
-        <span class="badge-divider"></span>
-          <div class="badge-item">
-            <a href="#">
-                392 <br>
-            </a>
-            <p>Following</p>
-          </div>
+        <div class="activity-level">
+          VERY ACTIVE
+        </div> <br>
+        <div class="badge-item">
+          <a href="#">2,536</a><br>
+          Followers
+        </div>
+        <span class="badge-divider">
+        </span>
+        <div class="badge-item">
+          <a href="#">392</a><br>
+          Following
+        </div>
       </div>
       <div class="profile-primary-element col-lg-offset-1 col-lg-8 col-md-offset-0 col-md-12">
         <div class="profile-photo-container col-lg-4">
           <img src="assets/headshot.jpg" class="profile-photo">
         </div>
         <div class= "primary-info col-lg-10 col-md-10">
-          <div class="current-city"><a href="#">Austin, TX</a></div>
-          <div class="name">Mike Henderson</div>
-          <div class="job-title"><a href="#">Sous Chef</a></div> |
-          <div class="job-title"><a href="#">Fabi + Rosi</a></div>
+          <a href="#" class="current-city">Austin, TX</a>
+          <div class="name">
+            Mike Henderson
+          </div>
+          <a href="#" class="job-title">Sous Chef</a> |
+          <a href="#" class="job-title">Fabi + Rosi</a>
           <div class="row">
             <div class="tagline col-lg-8 col-md-9">
               My tagline is something personal about myself. Tagline, tag and
@@ -74,12 +70,16 @@
         </div>
       </div>
     </div>
+    <!-- Keeping header-nav below the header, seems unintuitive, but allows us
+    to have this element bottom aligned without wrestling Bootstrap too much. -->
     <div class="text-center header-nav col-lg-offset-7 col-lg-4 col-sm-offset-7 col-sm-5">
       <a href="#">Invite to Job</a>  |  <a href="#">Message</a>
     </div>
 
     <div class= "body-nav text-center col-lg-12">
-      <a href="#">Overview</a>  |  <a href="#">Active</a>  |  <a href="#">Photos</a>
+      <a href="#" class="overview">Overview</a>  |
+      <a href="#" class="activity">Activity</a>  |
+      <a href="#" class="photos">Photos</a>
     </div>
 
     <div class="container">
@@ -96,55 +96,53 @@
         <b>2013</b>
         <p>One experience listing, with some details. Mike will probably have more to say than this.
         He’s accomplished a lot in this position afterall. A second experience will go here.
-        It will be wildly exciting and compelling.</p>
+        It will be wildly exciting and compelling.</p><br>
       </div>
     </div>
-    <br>
 
     <div class="featured-image row">
     </div>
 
-    <!-- !!! consider making this so you only have one div later -->
     <div class="container">
       <div class="section-row text-center">
-        <div class= "section-phrase">Mike has valuable skills and offers unique services.</div><br>
-          <div class="column-container col-lg-4">
-            <ul>
-              <b>Services</b>
-              <li>Expert expiditing</li>
-              <li>Management</li>
-              <li>Sommelier</li>
-            </ul>
-          </div>
-          <div class="column-container col-lg-4">
-            <ul>
-              <b>Skills</b>
-              <li>Wine pairing</li>
-              <li>Butchery</li>
-              <li>Knife Sharpening</li>
-              <li>Management</li>
-              <li>Multi-tasking</li>
-            </ul>
-          </div>
-          <div class="column-container col-lg-4">
-            <ul>
-              <b>Languages</b>
-              <li>English (native)</li>
-              <li>Spanish (fluent)</li>
-              <li>French (novice)</li>
-            </ul>
-          </div>
+        <div class= "section-phrase">Mike has valuable skills and offers unique services.
+        </div><br>
+        <div class="column-container col-lg-4">
+          <ul>
+            <b>Services</b>
+            <li>Expert expiditing</li>
+            <li>Management</li>
+            <li>Sommelier</li>
+          </ul>
+        </div>
+        <div class="column-container col-lg-4">
+          <ul>
+            <b>Skills</b>
+            <li>Wine pairing</li>
+            <li>Butchery</li>
+            <li>Knife Sharpening</li>
+            <li>Management</li>
+            <li>Multi-tasking</li>
+          </ul>
+        </div>
+        <div class="column-container col-lg-4">
+          <ul>
+            <b>Languages</b>
+            <li>English (native)</li>
+            <li>Spanish (fluent)</li>
+            <li>French (novice)</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <br>
 
-    <!-- !!! consider making this so you only have one div later -->
     <div class="alternative-section-row">
       <div class="container">
         <div class="section-row text-center">
-          <div class= "section-phrase">Mike has a formal education and wins accolades
-          from all the right people.</div><br>
-
+          <div class= "section-phrase">
+          Mike has a formal education and wins accolades from all the
+          right people.
+          </div><br>
           <b><a href="#">Culinary Institute of America</a></b><br>
           After earning his associate’s degree
           at the top of his class, Mike went
@@ -162,11 +160,11 @@
       </div>
     </div>
 
-    <br>
-
     <div class="container">
       <div class="section-row text-center">
-        <div class= "section-phrase">People love Mike!</div><br>
+        <div class= "section-phrase">
+          People love Mike!
+        </div><br>
         <b><a href="#">Tom Colichio</a> | <a href="#">Gramecy Tavern</a></b>
         <p>“Mike is a reliable and hard working team member with an excellent pallete. He has
         a very bright future.”</p><br>
@@ -177,5 +175,4 @@
       </div>
     </div>
   </body>
-
 </html>

@@ -14,18 +14,21 @@ body {
   color: #424242;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 33, ../scss/style.scss */
+.overview .overview,
+.activity .activity,
+.photos .photos,
 b {
   font-family: 'mulisemibold', Arial, sans-serif;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 40, ../scss/style.scss */
 a:hover {
-  text-decoration: none;
   border-bottom: 2px solid;
+  outline: 0;
 }
 
-/* line 37, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 .banner {
   background-image: url("../assets/banner.jpg");
   height: 737px;
@@ -33,13 +36,13 @@ a:hover {
   background-position: center;
 }
 @media (max-width: 768px) {
-  /* line 37, ../scss/style.scss */
+  /* line 47, ../scss/style.scss */
   .banner {
     height: 1102px;
   }
 }
 
-/* line 47, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 .header-overlay {
   display: block;
   width: 100%;
@@ -49,54 +52,54 @@ a:hover {
   margin-bottom: -26em;
 }
 @media (max-width: 768px) {
-  /* line 47, ../scss/style.scss */
+  /* line 57, ../scss/style.scss */
   .header-overlay {
     margin-bottom: -41em;
   }
 }
 
-/* line 61, ../scss/style.scss */
+/* line 71, ../scss/style.scss */
 .badge-logo {
   width: 150px;
   height: auto;
 }
 @media (max-width: 768px) {
-  /* line 61, ../scss/style.scss */
+  /* line 71, ../scss/style.scss */
   .badge-logo {
     margin: 0;
     position: relative;
-    left: 10px;
   }
 }
 
-/* line 71, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
+.activity-level {
+  color: #ff5a00;
+}
+
+/* line 84, ../scss/style.scss */
 .badge-item {
+  font-size: 16px;
   line-height: 1;
-  margin-top: -15px;
   margin: -15px 15px 10px 15px;
   color: #b9b9b9;
   display: inline-block;
-  padding: 0;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 .badge-item a:hover, .badge-item a {
   color: #b9b9b9;
   border-bottom: none;
+  font-size: 26px;
+  text-decoration: none;
 }
 
-/* line 85, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .badge-item:hover {
   border-bottom: 2px solid;
   cursor: pointer;
 }
 
-/* line 90, ../scss/style.scss */
-.badge-item p {
-  font-size: 16px;
-}
-
-/* line 94, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 .badge-divider {
   display: inline-block;
   height: 60px;
@@ -105,28 +108,28 @@ a:hover {
   margin-top: -30px;
 }
 
-/* line 104, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .profile-primary-element {
-  display: block;
   padding-right: 20px;
   line-height: 1.5;
 }
 
-/* line 110, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 .profile-photo-container {
   display: inline-block;
   width: 300px;
   margin: 30px;
+  padding: 0;
 }
 @media (max-width: 768px) {
-  /* line 110, ../scss/style.scss */
+  /* line 119, ../scss/style.scss */
   .profile-photo-container {
     display: block;
-    margin: 40px auto;
+    margin: 30px auto;
   }
 }
 
-/* line 120, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .profile-photo {
   width: 300px;
   height: 300px;
@@ -137,15 +140,15 @@ a:hover {
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
-/* line 130, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 .primary-info {
   display: inline-block;
   position: absolute;
-  padding-top: 40px;
+  padding-top: 25px;
   color: #b9b9b9;
 }
 @media (max-width: 768px) {
-  /* line 130, ../scss/style.scss */
+  /* line 140, ../scss/style.scss */
   .primary-info {
     display: block;
     padding: 0 0 40px 0;
@@ -154,52 +157,40 @@ a:hover {
   }
 }
 
-/* line 149, ../scss/style.scss */
-.current-city,
-.current-city a,
-.activity-level,
-.activity-level a,
-.job-title a,
-.job-title {
+/* line 153, ../scss/style.scss */
+.primary-info a {
   color: #ff5a00;
   text-decoration: none;
 }
 
-/* line 154, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .current-city:before {
   font-family: FontAwesome;
   content: "\f041";
   padding-right: 10px;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 .name {
   color: #ffffff;
   font-size: 48px;
 }
 
-/* line 165, ../scss/style.scss */
+/* line 169, ../scss/style.scss */
 .job-title {
   display: inline;
 }
 
-/* line 169, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 .tagline {
   font-family: 'mulilightitalic', Arial, sans-serif;
   color: #b9b9b9;
   display: block;
 }
 
-/* line 177, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .social-button-container {
   padding-top: 10px;
-}
-@media (max-width: 768px) {
-  /* line 177, ../scss/style.scss */
-  .social-button-container {
-    padding: 0;
-    margin-top: 10px;
-  }
 }
 
 /* line 185, ../scss/style.scss */
@@ -275,7 +266,14 @@ a:hover {
   padding-bottom: 96px;
 }
 
-/* line 250, ../scss/style.scss */
+@media (max-width: 768px) {
+  /* line 248, ../scss/style.scss */
+  .column-container:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+/* line 256, ../scss/style.scss */
 .featured-image {
   background-image: url("../assets/steak.JPG");
   height: 85%;

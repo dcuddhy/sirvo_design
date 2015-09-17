@@ -23,13 +23,23 @@ body{
   color: $text-primary;
 }
 
+// These double classes work to highlight the current page, because we assign
+// the first class to the body, and the second to the page selection link.
+//  When the classes match, we are on the current page.  This may need to be
+// refactored in production if our body tag is on an application template.
+.overview .overview,
+.activity .activity,
+.photos .photos,
 b{
   font-family: 'mulisemibold', Arial, sans-serif;
 }
 
+// Twitter Bootstrap will override text-decoration on anchor links without
+// more secificity, so we will have to apply 'text-decoration: none;' throughout.
+// Also, with links of varied color, we are unable to effectively group styling.
 a:hover{
-  text-decoration: none;
   border-bottom: 2px solid;
+  outline: 0;  // remove default dotted outline in Firefox
 }
 
 
@@ -64,31 +74,31 @@ a:hover{
   @media (max-width: 768px) {
     margin: 0;
     position: relative;
-    left: 10px;
   }
 }
 
+.activity-level{
+  color: $brand-primary;
+}
+
 .badge-item {
+  font-size: 16px;
   line-height: 1;
-  margin-top: -15px;
   margin: -15px 15px 10px 15px;
   color: $text-secondary;
   display: inline-block;
-  padding: 0;
 }
 
 .badge-item a:hover, .badge-item a{
   color: $text-secondary;
   border-bottom: none;
+  font-size: 26px;
+  text-decoration: none;
 }
 
 .badge-item:hover{
   border-bottom: 2px solid;
   cursor: pointer;
-}
-
-.badge-item p{
-  font-size: 16px;
 }
 
 .badge-divider{
@@ -102,7 +112,6 @@ a:hover{
 
 // Profile Element Styles
 .profile-primary-element{
-  display: block;
   padding-right: 20px;
   line-height: 1.5;
 }
@@ -111,9 +120,10 @@ a:hover{
   display: inline-block;
   width: 300px;
   margin: 30px;
+  padding: 0;
   @media (max-width: 768px) {
     display: block;
-    margin: 40px auto;
+    margin: 30px auto;
   }
 }
 
@@ -130,7 +140,7 @@ a:hover{
 .primary-info{
   display: inline-block;
   position: absolute;
-  padding-top: 40px;
+  padding-top: 25px;
   color: $text-secondary;
   @media (max-width: 768px) {
     display: block;
@@ -138,15 +148,9 @@ a:hover{
     position: relative;
     text-align: center;
   }
-
 }
 
-.current-city,
-.current-city a,
-.activity-level,
-.activity-level a,
-.job-title a,
-.job-title{
+.primary-info a{
   color: $brand-primary;
   text-decoration: none;
 }
@@ -176,10 +180,6 @@ a:hover{
 // Social Media Buttons Styles
 .social-button-container{
   padding-top: 10px;
-  @media (max-width: 768px) {
-    padding: 0;
-    margin-top: 10px;
-  }
 }
 
 .social-button{
@@ -243,6 +243,12 @@ a:hover{
 
 .column-container{
   padding-bottom: 96px;
+}
+
+.column-container:last-of-type{
+  @media (max-width: 768px) {
+    padding-bottom: 0;
+  }
 }
 
 
